@@ -4,5 +4,10 @@
       "src": "index.php",
       "use": "@vercel/php@1.2.1"
     }
-  ]
+  ],
+  "builders": {
+    "@vercel/php": {
+      "version": "1.2.1"
+    }
+  }
 }
