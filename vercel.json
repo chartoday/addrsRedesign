@@ -1,8 +1,7 @@
 {
-  "builds": [
-    {
-      "src": "index.php",
-      "use": "@vercel/php@1.2.1"
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.5.2"
     }
-  ]
+  }
 }
