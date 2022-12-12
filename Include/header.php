@@ -15,7 +15,7 @@
   ?>
 
   <!--@ddrs-->
-  <div class=headerSections>
+  <div class=headerSections id="headerTitle">
     <h1 id="title">@<span style="opacity: 50%;">ddrs</span></h1>
   </div>
 

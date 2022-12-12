@@ -10,6 +10,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share&display=swap" rel="stylesheet">
+	<script src="app.js"></script>
 	<meta charset="utf-8">
 	<title>Addrs</title>
 	  <link rel="stylesheet" type="text/css" href="styles.css"/> 
@@ -27,14 +28,14 @@ include "Include/header.php"?>
 	<!---->
 	<div class="mainColumn">
 		<div class=mainDiv>
-			<h2 style="margin:0;">Send/receive crypto</h2>
-			<h2 style="margin:0">without addresses</h2>
+			<h2 style="font-size:2em; margin:0;">Send/receive crypto</h2>
+			<h2 style="font-size:2em; margin:0">without addresses</h2>
 		</div>	
 		<div class=mainDiv>
 			<h2 style="margin:0;">Pay with Visa/MC</h2>
-			<p style="margin:0">Anyone can pay you using Visa and Mastercard, but with you receiving Crypto directly to 
-            your wallet! No signup, no KYC, no BANK account needed! International, real-time and low fees! Use to #earn 
-            your Crypto. Amazing for freelancers, small businesses and getting paid for that pizza bill!</p>
+			<p style="margin:0">Anyone can pay you using Visa and Mas&shyter&shycard, but with you re&shycei&shyving Cryp&shyto di&shyrect&shyly to 
+            your wa&shyllet! No sign&shyup, no KYC, no BANK account nee&shyded! In&shyter&shyna&shytio&shynal, real-&shytime and low fees! Use to #earn 
+            your Cryp&shyto. Ama&shyzing for free&shylan&shycers, small busi&shyne&shysses and get&shyting paid for that pi&shyzza bill!</p>
 			<img src="Assets/Card.png">
 		</div>	
 	</div>
@@ -42,8 +43,8 @@ include "Include/header.php"?>
 	<div class="mainColumn">
 		<div class=mainDiv>
 			<h2 style="margin:0;">ALL your crypto</h2>
-			<p style="margin:0">We support as many assets as possible! From BTC to ETH to Tokens to privacy tokens, 
-            whatever you need we have it, and if we dont just ask!</p>		
+			<p style="margin:0">We support as many assets as po&shyssi&shyble! From BTC to ETH to To&shykens to pri&shyva&shycy to&shykens, 
+            what&shyever you need we have it, and if we don't just ask!</p>		
             <div style="align-content: flex;flex-direction: row; gap:16px ">
 				<img src="Assets/BTC.png">
 				<img src="Assets/ETH.png">
@@ -52,8 +53,8 @@ include "Include/header.php"?>
 		</div>	
 		<div class=mainDiv>
 			<h2 style="margin:0;">Non-custodial</h2>
-			<p style="margin:0">Your Crypto, your keys! All your assets are directly sent to your wallets! Your handle 
-            simply acts like a road, so rather than needing to give specific, complicated directions, they use GPS.</p>
+			<p style="margin:0">Your Cryp&shyto, your keys! All your assets are di&shyrect&shyly sent to your wa&shyllets! Your han&shydle 
+            sim&shyply acts like a road, so ra&shyther than nee&shyding to give spe&shyci&shyfic, com&shypli&shyca&shyted di&shyrec&shytions, they use GPS.</p>
 			<img src="Assets/Key.png">
 		</div>	
 	</div>
@@ -61,6 +62,10 @@ include "Include/header.php"?>
 </div>
 
 <!--Footer-->
-<?php include "Include/footer.html"?>
+<footer>
+	<a href="index.php" class="footerP">Home</a>
+	<a href="about.php" class="footerP">About</a>
+	<a href="https://twitter.com/addrsTo" class="footerP">Twitter</a>
+</footer>
 
 </html>

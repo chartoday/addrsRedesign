@@ -26,22 +26,36 @@ include "Include/header.php";?>
     $userName = $_SESSION["username"];
     echo($userName)
     ?></span></h2>
-    <form method="POST" action="signup.php" style="gap:48px; display:flex; flex-direction: column; align-items: center;">
+    <form method="POST" style="gap:48px; display:flex; flex-direction: column; align-items: center;">
         <div style="display:flex; flex-direction: column; gap:16px; width:100%; align-items:center" >
-        <input name="email" type=text class=searchbar placeholder="satoshi@email.com" style="border-radius: 10px; width: 25%;">
-        <input name="password" type=text class=searchbar placeholder="********" style="border-radius: 10px; width: 25%;">
+        <input required name="email" type=email class=searchbar placeholder="satoshi@email.com" style="border-radius: 10px; width: 100%;">
+        <input required name="password" type=password class=searchbar placeholder="8 characters or +" style="border-radius: 10px; width: 100%;">
+        <p style="margin:0px; padding:0px; color:#FA8446"><?php
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+        
+        if (strlen($password) < 8 && $password != null) {
+            echo "Insert a password longer than 8 characters";
+        } 
+
+        ?></p>
         </div>
         <div style="display:flex; flex-direction:rows; align-items:center; gap:48px">
-            <input id="searchSubmit" value="Create account" type="submit" style="border-radius: 10px; background:#4D8DC8; color:#FFFFFF;">
+        <input id="searchSubmit" value="Create account" type="submit" style="border-radius: 10px; background:#4D8DC8; color:#FFFFFF;">
             <div style="display:flex; gap:24px">
-            <img style="width:32px; height:32px" src="Assets/google.png">
-            <img style="width:32px; height:32px" src="Assets/metamask.png">
+                <img style="width:32px; height:32px" src="Assets/google.png">
+                <img style="width:32px; height:32px" src="Assets/metamask.png">
             </div>
         </div>
     </form>
-</div>
 
+</div>
+   
 <!--Footer-->
-<?php include "Include/footer.html"?>
+<footer class="shortPageFooter">
+	<a href="index.php" class="footerP">Home</a>
+	<a href="about.php" class="footerP">About</a>
+	<a href="https://twitter.com/addrsTo" class="footerP">Twitter</a>
+</footer>
 
 </html>
