@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html style="margin: 0px">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <title>addrs.to</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <!--Header-->
+  <header class="navbar">
+    <!--Empty-->
+    <div
+      id="searchBar"
+      class="headerSections"
+      style="padding: 0px; justify-content: center"
+    ></div>
+
+    <!--@ddrs-->
+    <div id="twoElements" class="headerSections" id="headerTitle">
+      <h1 class="title">@<span style="opacity: 50%">ddrs</span></h1>
+    </div>
+
+    <!--Back-->
+    <div
+      class="headerSections"
+      id="headerRight"
+      style="padding: 0; justify-content: right"
+    >
+      <button style="background: #4d8dc8; color: #ffffff">
+        <a
+          style="
+            white-space: nowrap;
+            color: #ffffff;
+            text-decoration-line: none;
+          "
+          href="index.html"
+          >Back home</a
+        >
+      </button>
+    </div>
+  </header>
+
+  <div id="signupScreen" class="mainBlock">
+    <h2>1. Register a handle for all your crypto addresses</h2>
+
+    <div id="biggerSearchBar">
+      <form
+        method="POST"
+        action="signup.php"
+        style="display: flex; justify-content: center"
+      >
+        <input
+          required
+          name="usernameInput"
+          type="text"
+          id="signUpSearchbar"
+          class="searchbar"
+          placeholder="satoshi"
+        />
+        <a
+          href="register.html"
+          id="searchSubmit"
+          value="Check"
+          type="submit"
+          style="
+            border-radius: 0px 10px 10px 0px;
+            background: #4d8dc8;
+            color: #ffffff;
+            text-decoration: none;
+          "
+          >Check</a
+        >
+      </form>
+      <p style="margin: 0; padding: 1em 0 0 0; color: #fa8446"></p>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer class="shortPageFooter">
+    <a href="index.html" class="footerP">Home</a>
+    <a href="about.html" class="footerP">About</a>
+    <a href="https://twitter.com/addrsTo" class="footerP">Twitter</a>
+  </footer>
+</html>

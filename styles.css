@@ -1,255 +1,342 @@
 * {
-	font-family: Share;
+  font-family: Share;
 }
 
 body {
-	margin: 0;
+  margin: 0;
 }
 
 .navbar {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 48px 48px;
-	gap: 48px;
-	height: 55.5px; /*Height is fixed, might need to change eventually*/
-	position: relative;
-	width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 48px;
+  gap: 48px;
+  height: 55.5px; /*Height is fixed, might need to change eventually*/
+  position: relative;
+  width: auto;
 }
 
 .headerSections {
-	display: flex;
-	flex-direction: row;
-	padding: 0px 0px;
-	width: 33%;
-	text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px;
+  width: 33%;
+  text-align: center;
 
-	justify-content: center;
-	align-items: center;
-	gap: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 .mainBlock {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 48px;
-	position: relative;
-	padding: 0 48px 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  position: relative;
+  padding: 0 48px 48px;
 }
 
 .mainColumn {
-	display: flex;
-	flex-direction: column;
-	gap: 48px;
-	width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 25%;
 }
 
 .mainDiv {
-	margin: 0;
-	width: 100%;
-	background: #F6F9FC;
-	color: #4D8DC8;
-	text-align: center;
-	padding: 24px 0px;
-	border-style: thin;
-	border-radius: 10px;
+  margin: 0;
+  width: 100%;
+  background: #f6f9fc;
+  color: #4d8dc8;
+  text-align: center;
+  padding: 24px 0px;
+  border-style: thin;
+  border-radius: 10px;
 }
 
 button {
-	display: flex;
-	padding: 16px 32px;
-	font-size: 20px;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	border-radius: 10px;
-	border-width: 0;
+  display: flex;
+  padding: 16px 32px;
+  font-size: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border-width: 0;
 }
 
 button:hover {
-	box-shadow: 0 3px 15px rgb(0 0 0 / 0.15);
-	padding: 16.5px 32.5px;
+  box-shadow: 0 3px 15px rgb(0 0 0 / 0.15);
+  padding: 16.5px 32.5px;
 }
 
 #searchSubmit {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 16px 32px;
-	font-size: 20px;
-	border-radius: 10px;
-	border-width: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 0;
 }
 
 #searchSubmit:hover {
-	box-shadow: 0 3px 15px rgb(0 0 0 / 0.15);
-	padding: 16.5px 32.5px;
+  box-shadow: 0 3px 15px rgb(0 0 0 / 0.15);
+  padding: 16.5px 32.5px;
 }
 
 p {
-	text-align: center;
-	color: #0C0C0D;
-	font-size: 20px;
-	padding: 16px 32px 16px 32px;
+  text-align: center;
+  color: #0c0c0d;
+  font-size: 20px;
+  padding: 16px 32px 16px 32px;
+  margin: 0;
+}
+
+.noPadding {
+  padding: 0;
+  margin: 0;
+}
+
+p.noPadding#wrappedP {
+  width: 60%;
+}
+
+ul.flex {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 3em;
+  color: #4d8dc8;
+  font-weight: 700;
+  font-size: 1.25em;
 }
 
 .searchbar {
-	background: #F8F8F8;
-	border-width: 0;
-	padding: 16px 32px;
-	text-align: center;
-	font-size: 20px;
-	width: 40%;
+  background: #f8f8f8;
+  border-width: 0;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 20px;
+  width: 40%;
 }
 
 #signUpSearchbar {
-	border-radius: 10px 0px 0px 10px; 
-	width: 100%;
+  border-radius: 10px 0px 0px 10px;
+  width: 100%;
 }
 
 footer {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	gap: 96px;
-	border-style: thin;
-	border-radius: 20px 20px 0 0;
-	background: #F6F9FC;
-	padding: 36px 0 36px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 96px;
+  border-style: thin;
+  border-radius: 20px 20px 0 0;
+  background: #f6f9fc;
+  padding: 36px 0 36px 0;
 }
 
 .shortPageFooter {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footerP {
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	color: #0C0C0D;
-	text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #0c0c0d;
+  text-decoration: none;
 }
 
 h2 {
-	font-size: 1.75em;
-	text-align: center;
-	white-space: normal;
+  font-size: 1.75em;
+  text-align: center;
+  white-space: normal;
+  margin: 36px 0;
+  color: #4d8dc8;
 }
 
-#title {
-	margin: 0px;
-	color:#4D8DC8;
-	font-weight: 500;
-	font-size: 3em;
+.title {
+  margin: 0px;
+  color: #4d8dc8;
+  font-weight: 500;
+  font-size: 3em;
 }
 
 a {
-	color: #FA8446;
+  color: #fa8446;
 }
 
-@media only screen and (max-width: 650px) {
-	.mainBlock {
-		flex-direction: column;
-		align-items: center;
-		width: auto;
-		gap: 24px;
-	}
-	.mainColumn {
-		width: 100%;
-		gap: 24px;
-	}
-	.mainDiv {
-		background-color: #FFFFFF;
-	}
-	#searchBar {
-		display:none;
-	}
-	.headerSections {
-		width: 50%;
-	}
-	#headerTitle {
-		text-align: left;
-		width: auto;
-		font-size: 0.85em;
-	}
-	#headerRight {
-		justify-content: right;
-	}
-	p {
-		text-align: justify;
-		hyphens: auto;
-	}
-	.navbar {
-		padding: 48px 24px 48px 24px;
-	}
-	button {
-		font-size: 1em;
-		padding: 12px 24px;
-	}
-	button:hover {
-		box-shadow: 0 3px 10px rgb(0 0 0 / 0.15);
-		padding: 12.5px 24.5px;
-	}
-	#biggerSearchBar{
-		width: 100%;
-	}
+.mainBlock#signupScreen {
+  gap: 24px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 48px;
+  margin: 0 0 48px 0;
+  height: calc(100vh - 94.5px - 151.5px - 48px);
 }
 
-@media only screen and (min-width:650px) {
-	.mainColumn {
-		width: 40%;
-	}
-	#searchBar {
-		display: none;
-	}
-	.headerSections {
-		width: 50%;
-	}
-	p {
-		text-align: justify;
-		hyphens: auto;
-	}
-	#biggerSearchBar{
-		width: 60%;
-	}
-	a {
-		font-size: 20px;
-	}
+.searchbar#loginInput {
+  border-radius: 10px;
+  width: auto;
+  padding: 16px 64px;
 }
 
-@media only screen and (min-width:1000px) {
-	.mainColumn {
-		width: 33%;
-	}
-	#searchBar {
-		display: block;
-	}
-	.headerSections {
-		width: 50%;
-	}
-	#headerRight {
-		justify-content: right;
-	}
-	.mainDiv {
-		background: #F6F9FC;
-	}
-	#biggerSearchBar{
-		width: 50%;
-	}
+#loginForm {
+  gap: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100vw - 96px);
 }
 
-@media only screen and (min-width:1200px) {
-	.mainColumn {
-		width: 27.5%;
-	}
-	#biggerSearchBar{
-		width: 33%;
-	}
+@media only screen and (max-width: 667px) {
+  .mainBlock {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    gap: 0;
+    padding: 0 24px;
+  }
+  .mainBlock#signupScreen {
+    padding: 0 24px;
+    margin: 0 0 36px;
+    height: calc(100vh - 90px - 127.5px - 36px);
+  }
+  .mainColumn {
+    width: 100%;
+    gap: 24px;
+    padding: 0 0 24px 0;
+  }
+  .mainDiv {
+    background-color: #ffffff;
+    padding: 0;
+  }
+  #searchBar {
+    display: none;
+  }
+  .headerSections {
+    width: 50%;
+  }
+  #headerTitle {
+    text-align: left;
+    width: auto;
+    font-size: 0.85em;
+  }
+  p {
+    text-align: justify;
+    hyphens: auto;
+    padding: 16px 0;
+  }
+  .navbar {
+    padding: 36px;
+    gap: 24px;
+  }
+  button {
+    font-size: 1em;
+    padding: 12px 16px;
+  }
+  button:hover {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.15);
+    padding: 12.5px 24.5px;
+  }
+  #biggerSearchBar {
+    width: 100%;
+  }
+  footer {
+    gap: 48px;
+  }
+  h2 {
+    margin: 0 0 0px 0;
+  }
+  #loginForm {
+    width: calc(100vw - 48px);
+    gap: 24px;
+  }
+  p.noPadding#wrappedP {
+    width: 100%;
+  }
+  ul.flex {
+    gap: 1.75em;
+  }
+  .headerSections#twoElements {
+    justify-content: left;
+  }
+}
+
+@media only screen and (min-width: 667px) {
+  .mainColumn {
+    width: 50%;
+  }
+  #searchBar {
+    display: none;
+  }
+  .headerSections {
+    width: 50%;
+  }
+  p {
+    text-align: justify;
+    hyphens: auto;
+  }
+  #biggerSearchBar {
+    width: 60%;
+  }
+  a {
+    font-size: 20px;
+  }
+  .headerSections#twoElements {
+    justify-content: left;
+  }
+  p.noPadding#wrappedP {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .mainColumn {
+    width: 40%;
+  }
+  #searchBar {
+    display: block;
+  }
+  .headerSections {
+    width: 50%;
+  }
+  #headerRight {
+    justify-content: right;
+  }
+  .mainDiv {
+    background: #f6f9fc;
+  }
+  #biggerSearchBar {
+    width: 50%;
+  }
+  .headerSections#twoElements {
+    justify-content: center;
+  }
+  p.noPadding#wrappedP {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mainColumn {
+    width: 27.5%;
+  }
+  #biggerSearchBar {
+    width: 33%;
+  }
+  p.noPadding#wrappedP {
+    width: 60%;
+  }
 }

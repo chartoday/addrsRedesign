@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html style="margin: 0px">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <title>Addrs</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <!--Header-->
+  <header class="navbar">
+    <!--Empty-->
+    <div
+      id="searchBar"
+      class="headerSections"
+      style="padding: 0px; justify-content: center"
+    ></div>
+
+    <!--@ddrs-->
+    <div id="twoElements" class="headerSections" id="headerTitle">
+      <h1 class="title">@<span style="opacity: 50%">ddrs</span></h1>
+    </div>
+
+    <!--Back-->
+    <div
+      class="headerSections"
+      id="headerRight"
+      style="padding: 0; justify-content: right"
+    >
+      <button style="background: #4d8dc8; color: #ffffff">
+        <a
+          style="
+            white-space: nowrap;
+            color: #ffffff;
+            text-decoration-line: none;
+          "
+          href="index.html"
+          >Back home</a
+        >
+      </button>
+    </div>
+  </header>
+
+  <div class="mainBlock" id="signupScreen">
+    <h2 style="margin: 0">
+      <span>2. Create an account to register the handle</span>
+      <span style="font-style: italic"></span>
+    </h2>
+    <form id="loginForm" method="POST">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <input
+          id="loginInput"
+          required
+          name="email"
+          type="email"
+          class="searchbar"
+          placeholder="satoshi@email.com"
+        />
+        <input
+          id="loginInput"
+          required
+          name="password"
+          type="password"
+          class="searchbar"
+          placeholder="8 characters or +"
+        />
+        <p style="margin: 0px; padding: 0px; color: #fa8446"></p>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: rows;
+          align-items: center;
+          gap: 48px;
+        "
+      >
+        <button
+          id="searchSubmit"
+          type="submit"
+          style="border-radius: 10px; background: #4d8dc8; color: #ffffff"
+        >
+          Create Account
+        </button>
+        <div style="display: flex; gap: 24px">
+          <img style="width: 32px; height: 32px" src="Assets/google.png" />
+          <img style="width: 32px; height: 32px" src="Assets/metamask.png" />
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!--Footer-->
+  <footer class="shortPageFooter">
+    <a href="index.html" class="footerP">Home</a>
+    <a href="about.html" class="footerP">About</a>
+    <a href="https://twitter.com/addrsTo" class="footerP">Twitter</a>
+  </footer>
+</html>
